@@ -24,6 +24,9 @@
             $content = Template::controller($moduleName, $controllerName);
             $modulePath = $projectRoot . "/src/Modules/" . $moduleName;
             $controllerFolderPath = $this->checkControllersFolder($modulePath);
+            if($controllerFolderPath) {
+                $this->generate($controllerName, $content, $controllerFolderPath);
+            }
         }
 
         private function checkControllersFolder($modulePath) {
