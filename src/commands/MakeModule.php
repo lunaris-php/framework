@@ -44,6 +44,7 @@
                 "name={$controllerName}",
                 "module={$moduleName}"
             ]);
+            $makeController->execute();
 
             $routerContent = Template::router($moduleName);
             file_put_contents("{$modulePath}/routes.php", $routerContent);
