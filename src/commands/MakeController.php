@@ -47,7 +47,7 @@
         private function generate($name, $content, $path) {
             $controllerFileName = $name . ".php";
             $controllerFilePath = $path . "/" . $controllerFileName;
-            if(file_exists($commandFilePath)) {
+            if(file_exists($controllerFilePath)) {
                 echo "{$name} already exists in {$path}" . PHP_EOL;
                 return false;
             }

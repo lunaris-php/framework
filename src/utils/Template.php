@@ -49,5 +49,7 @@
 
                     Router::get("/{$init}", [Module\\{$moduleName}\\Controllers\\{$moduleName}Controller::class, 'index']);
             PHP;
+
+            return $content;
         }
     }
