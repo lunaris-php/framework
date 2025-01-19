@@ -46,7 +46,7 @@
             ]);
 
             $routerContent = Template::router($moduleName);
-            file_put_contents("{$modulePath}/routes.php", $routerCode);
+            file_put_contents("{$modulePath}/routes.php", $routerContent);
 
             echo "Module {$moduleName} is created successfully in src/modules.".PHP_EOL;
             echo "Add module name {$moduleName} to App/Config/modules.php to activate the module." . PHP_EOL;
