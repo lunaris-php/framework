@@ -22,7 +22,7 @@
             $moduleName = $args['module'] ?? 'Main';
 
             $content = Template::controller($moduleName, $controllerName);
-            $modulePath = $projectRoot . "/src/Modules/" . $moduleName;
+            $modulePath = $projectRoot . "/src/modules/" . $moduleName;
             $controllerFolderPath = $this->checkControllersFolder($modulePath);
             if($controllerFolderPath) {
                 $this->generate($controllerName, $content, $controllerFolderPath);
